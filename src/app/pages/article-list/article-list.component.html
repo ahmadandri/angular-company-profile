@@ -1,0 +1,16 @@
+<div class="row grid">
+  <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let data of listArticle">
+    <div style="padding:5%">
+      <div style="width: 100%">
+        <img style="max-width:100%; border-radius: 5px; margin-bottom: 5px;" src="../../../assets/image/images{{data.articleId}}.png">
+      </div>
+      <div style="margin-bottom: 5px;max-height: 50px; overflow: hidden;">
+        {{data.text}}
+      </div>
+      <div style="margin-bottom: 5px;">
+        <button class="btn btn-success" (click)="onActionDetail(data.articleId)" type="button">Read More >>></button>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
